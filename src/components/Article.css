@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.news-card {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1%;
+  border: 1px solid;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  text-align: start;
+  color: black;
+  z-index: 6;
+}
+
+.news-card-image {
+  max-width: 320px;
+  margin-right: 10px;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.news-card-author-time {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 2px;
+  color: #808290;
+}
