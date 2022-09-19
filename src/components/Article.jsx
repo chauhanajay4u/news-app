@@ -2,16 +2,15 @@ import "./Article.css"
 import moment from "moment"
 
 const Article = (props) => {
-  console.log(moment().format("MMMM Do YYYY, h:mm:ss a"))
+  // console.log(moment().format("MMMM Do YYYY, h:mm:ss a"))
   let publishedAt = new Date(props.item.publishedAt)
-  console.log(
-    `${publishedAt.toLocaleString("en-US", {
-      hour: "numeric",
-      minute: "numeric",
-      hour12: true
-    })} on ${publishedAt.getDate()} ${publishedAt.getMonth()}`
-  )
-  console.log()
+  // console.log(
+  //   `${publishedAt.toLocaleString("en-US", {
+  //     hour: "numeric",
+  //     minute: "numeric",
+  //     hour12: true
+  //   })} on ${publishedAt.getDate()} ${publishedAt.getMonth()}`
+  // )
   const source = ` by ${props.item.author} / ${props.item.publishedAt}`
   return (
     <div className="news-card">
